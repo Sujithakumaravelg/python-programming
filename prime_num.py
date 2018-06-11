@@ -1,5 +1,6 @@
 def prime_num():
     try:
+        n=0
         l=int(input())
         r=int(input())
         for num in range(l,r+ 1):
@@ -8,7 +9,8 @@ def prime_num():
                    if (num % i) == 0:
                        break
                else:
-                   print(num)
+                   n=n+1
+        print(n)          
     except:
         print("enter valid value")
 prime_num()
